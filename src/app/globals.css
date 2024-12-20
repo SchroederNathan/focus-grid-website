@@ -8,6 +8,7 @@
   --primary: #2e4074;
   --secondary: #3d4255;
   --accent: #42a7ff;
+  --container-background: #ffffff;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -16,6 +17,7 @@
     --primary: #8a9cd0;
     --secondary: #a9aec1;
     --accent: #0065bd;
+    --container-background: #1e1f25;
   }
 }
 

@@ -13,6 +13,7 @@ export default {
         background: "var(--background)",
         primary: "var(--primary)",
         secondary: "var(--secondary)",
+        containerBackground: "var(--container-background)",
       },
       fontFamily: {
         lexend: ["var(--font-lexend)"],
