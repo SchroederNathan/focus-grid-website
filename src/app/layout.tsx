@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Lexend } from "next/font/google";
+import { Lexend } from "next/font/google";
 import "./globals.css";
 
 const lexend = Lexend({
@@ -20,7 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${lexend.variable} font-lexend antialiased bg-background`}>
+      <body
+        className={`${lexend.variable} font-lexend antialiased bg-background`}
+      >
         {children}
       </body>
     </html>
