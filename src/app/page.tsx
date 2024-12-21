@@ -3,6 +3,7 @@ import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
 import Grid from "./components/ui/grid";
+import Footer from "./components/footer";
 
 const navigation = [
   { name: "Terms of Service", href: "#" },
@@ -281,6 +282,7 @@ export default function Home() {
           />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

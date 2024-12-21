@@ -1,8 +1,25 @@
+"use client";
 import React from "react";
 
 const Grid = () => {
   const rows = 5;
   const [cols, setCols] = React.useState(24);
+  // Add state for opacity values
+  const [opacityValues, setOpacityValues] = React.useState<number[][]>([]);
+
+  // Helper function to get random opacity level
+  const getRandomOpacity = () => {
+    const levels = [0, 0.3, 0.6, 1];
+    return levels[Math.floor(Math.random() * levels.length)];
+  };
+
+  // Initialize opacity values on client side
+  React.useEffect(() => {
+    const newOpacityValues = Array(rows)
+      .fill(0)
+      .map(() => Array(cols).fill(0).map(() => getRandomOpacity()));
+    setOpacityValues(newOpacityValues);
+  }, [rows, cols]);
 
   // Add resize observer to update columns
   React.useEffect(() => {
@@ -28,12 +45,6 @@ const Grid = () => {
     return () => observer.disconnect();
   }, []);
 
-  // Helper function to get random opacity level
-  const getRandomOpacity = () => {
-    const levels = [0, 0.3, 0.6, 1];
-    return levels[Math.floor(Math.random() * levels.length)];
-  };
-
   return (
     <div
       className="flex flex-col gap-1 items-center justify-center"
@@ -42,7 +53,7 @@ const Grid = () => {
       {[...Array(rows)].map((_, rowIndex) => (
         <div key={rowIndex} className="flex gap-1">
           {[...Array(cols)].map((_, colIndex) => {
-            const opacity = getRandomOpacity();
+            const opacity = opacityValues[rowIndex]?.[colIndex] ?? 0;
             return (
               <div
                 key={colIndex}
@@ -50,7 +61,7 @@ const Grid = () => {
                   opacity === 0 ? "bg-secondaryContainer" : "bg-primary"
                 }`}
                 style={{
-                  opacity: opacity || 1, // Use 1 when opacity is 0 to show full secondary-container color
+                  opacity: opacity || 1,
                 }}
               />
             );
