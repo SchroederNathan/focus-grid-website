@@ -14,6 +14,7 @@ export default {
         primary: "var(--primary)",
         secondary: "var(--secondary)",
         containerBackground: "var(--container-background)",
+        secondaryContainer: "var(--secondary-container)",
       },
       fontFamily: {
         lexend: ["var(--font-lexend)"],

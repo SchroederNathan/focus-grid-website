@@ -2,6 +2,7 @@
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
+import Grid from "./components/ui/grid";
 
 const navigation = [
   { name: "Terms of Service", href: "#" },
@@ -176,7 +177,7 @@ export default function Home() {
                 <p className="mt-2 text-lg font-medium tracking-tight text-text max-lg:text-center">
                   Habit Tracking
                 </p>
-                <p className="mt-2 max-w-lg  text-sm/6 text-gray-400 max-lg:text-center">
+                <p className="mt-2 max-w-lg max-lg:mx-auto text-sm/6 text-gray-400 max-lg:text-center">
                   Create, customize, and complete your habits with ease. Set up
                   personalized habits that align with your goals and track your
                   progress as you build lasting routines.
@@ -186,7 +187,7 @@ export default function Home() {
                 <div className="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
                   <img
                     className="size-full object-cover object-top"
-                    src="https://tailwindui.com/plus/img/component-images/bento-03-mobile-friendly.png"
+                    src="images/device-add.jpeg"
                     alt=""
                   />
                 </div>
@@ -206,12 +207,8 @@ export default function Home() {
                   system. Mark habits as complete to start streaks
                 </p>
               </div>
-              <div className="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
-                <img
-                  className="w-full max-lg:max-w-xs"
-                  src="https://tailwindui.com/plus/img/component-images/bento-03-performance.png"
-                  alt=""
-                />
+              <div className="w-full lg:mt-8 px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
+                <Grid />
               </div>
             </div>
             <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-t-[2rem]"></div>
@@ -246,7 +243,7 @@ export default function Home() {
                 <p className="mt-2 text-lg font-medium tracking-tight text-text max-lg:text-center">
                   Powerful APIs
                 </p>
-                <p className="mt-2 max-w-lg text-sm/6 text-gray-400 max-lg:text-center">
+                <p className="mt-2 max-w-lg max-lg:mx-auto text-sm/6 text-gray-400 max-lg:text-center">
                   Sit quis amet rutrum tellus ullamcorper ultricies libero dolor
                   eget sem sodales gravida.
                 </p>
