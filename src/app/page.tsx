@@ -2,8 +2,8 @@
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
-import Grid from "./components/ui/grid";
 import Footer from "./components/footer";
+import Grid from "./components/ui/grid";
 
 const navigation = [
   { name: "Terms of Service", href: "#" },
@@ -219,12 +219,11 @@ export default function Home() {
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
               <div className="px-8 pt-8 sm:px-10 sm:pt-10">
                 <p className="mt-2 text-lg font-medium tracking-tight text-text max-lg:text-center">
-                  Daily Reminders
+                  Share Your Progress
                 </p>
                 <p className="mt-2 max-w-lg max-lg:mx-auto text-sm/6 text-gray-400 max-lg:text-center">
-                  Stay on track with notifications. Get gentle reminders
-                  throughout the day to help you maintain your habits and
-                  achieve your goals.
+                  Keep yourself motivated by sharing your habit streaks and
+                  achievements with friends. Celebrate milestones together!
                 </p>
               </div>
               <div className="flex flex-1 items-center [container-type:inline-size] max-lg:py-6 lg:pb-2">
@@ -242,26 +241,21 @@ export default function Home() {
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
               <div className="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
                 <p className="mt-2 text-lg font-medium tracking-tight text-text max-lg:text-center">
-                  Powerful APIs
+                  Daily Reminders
                 </p>
                 <p className="mt-2 max-w-lg max-lg:mx-auto text-sm/6 text-gray-400 max-lg:text-center">
-                  Sit quis amet rutrum tellus ullamcorper ultricies libero dolor
-                  eget sem sodales gravida.
+                  Stay on track with notifications. Get gentle reminders
+                  throughout the day to help you maintain your habits and
+                  achieve your goals.
                 </p>
               </div>
-              <div className="relative min-h-[30rem] w-full grow">
-                <div className="absolute bottom-0 left-10 right-0 top-10 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl">
-                  <div className="flex bg-gray-800/40 ring-1 ring-white/5">
-                    <div className="-mb-px flex text-sm/6 font-medium text-gray-400">
-                      <div className="border-b border-r border-b-white/20 border-r-white/10 bg-white/5 px-4 py-2 text-white">
-                        NotificationSetting.jsx
-                      </div>
-                      <div className="border-r border-gray-600/10 px-4 py-2">
-                        App.jsx
-                      </div>
-                    </div>
-                  </div>
-                  <div className="px-6 pb-14 pt-6"></div>
+              <div className="relative min-h-[20rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
+                <div className="absolute inset-x-0 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
+                  <img
+                    className="size-full object-cover object-top"
+                    src="images/device-notification.jpg"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
