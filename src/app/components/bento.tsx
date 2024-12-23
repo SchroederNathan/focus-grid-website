@@ -52,11 +52,11 @@ function Bento() {
         <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
           <div className="px-8 pt-8 sm:px-10 sm:pt-10">
             <p className="mt-2 text-xl font-medium tracking-tight text-text max-lg:text-center">
-              Share Your Progress
+              Security
             </p>
             <p className="mt-2 max-w-lg max-lg:mx-auto text-md/6 text-gray-400 max-lg:text-center">
-              Keep yourself motivated by sharing your habit streaks and
-              achievements with friends. Celebrate milestones together!
+              Your habit data stays private on your device and restores
+              seamlessly from backups, ensuring secure and reliable tracking.
             </p>
           </div>
           <div className="flex flex-1 items-center [container-type:inline-size] max-lg:py-6 lg:pb-2">
