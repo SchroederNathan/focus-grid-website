@@ -3,8 +3,8 @@ import Grid from "./ui/grid";
 
 function Bento() {
   return (
-    <div className=" grid gap-4  xl:grid-cols-3 xl:grid-rows-2">
-      <div className="relative xl:row-span-2">
+    <div className="grid gap-4 xl:grid-cols-3 xl:grid-rows-3">
+      <div className="relative xl:row-span-3">
         <div className="absolute inset-px rounded-lg bg-containerBackground xl:rounded-l-[2rem]"></div>
         <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] xl:rounded-l-[calc(2rem+1px)]">
           <div className="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10 text-center">
@@ -49,7 +49,7 @@ function Bento() {
         </div>
         <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-xl:rounded-t-[2rem]"></div>
       </div>
-      <div className="relative max-xl:row-start-3 xl:col-start-2 xl:row-start-2 ">
+      <div className="relative max-xl:row-start-3 xl:col-start-2 xl:row-start-2 xl:row-span-2">
         <div className="absolute inset-px rounded-lg bg-containerBackground"></div>
         <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
           <div className="px-8 pt-8 sm:px-10 sm:pt-10 text-center">
@@ -80,7 +80,7 @@ function Bento() {
         </div>
         <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5"></div>
       </div>
-      <div className="relative xl:row-span-2">
+      <div className="relative xl:row-span-3">
         <div className="absolute inset-px rounded-lg bg-containerBackground max-xl:rounded-b-[2rem] xl:rounded-r-[2rem]"></div>
         <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-xl:rounded-b-[calc(2rem+1px)] xl:rounded-r-[calc(2rem+1px)]">
           <div className="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10 text-center">
