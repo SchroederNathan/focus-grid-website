@@ -1,6 +1,5 @@
-import React from "react";
-import Grid from "./ui/grid";
 import ChatBubble from "./ui/chat";
+import Grid from "./ui/grid";
 
 function Bento() {
   return (

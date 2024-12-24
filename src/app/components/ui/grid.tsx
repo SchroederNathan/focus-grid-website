@@ -17,7 +17,11 @@ const Grid = () => {
   React.useEffect(() => {
     const newOpacityValues = Array(rows)
       .fill(0)
-      .map(() => Array(cols).fill(0).map(() => getRandomOpacity()));
+      .map(() =>
+        Array(cols)
+          .fill(0)
+          .map(() => getRandomOpacity())
+      );
     setOpacityValues(newOpacityValues);
   }, [rows, cols]);
 

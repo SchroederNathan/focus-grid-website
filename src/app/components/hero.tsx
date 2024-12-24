@@ -1,10 +1,8 @@
-import React from "react";
-
 function Hero() {
   return (
     <div className="max-lg:mx-auto max-w-5xl max-lg:py-24 py-32 mx-auto">
       <div className="flex max-lg:flex-col items-center justify-center max-lg:gap-12 gap-24">
-        <div >
+        <div>
           <div className="hidden sm:mb-8 sm:flex max-lg:justify-center justify-start">
             <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-400/10 hover:ring-gray-400/20">
               See our newest features.{" "}
@@ -38,7 +36,7 @@ function Hero() {
                 />
               </a>
             </div>
-            <p  className="text-gray-500 mt-6">Coming Soon</p>
+            <p className="text-gray-500 mt-6">Coming Soon</p>
           </div>
         </div>
 

@@ -1,8 +1,7 @@
 "use client";
-import React, { useState } from "react";
 
 function NavBar() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  // const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="absolute inset-x-0 top-0 z-50">
