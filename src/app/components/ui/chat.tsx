@@ -23,7 +23,7 @@ function ChatBubble({
         }`}
       >
         <div className="flex items-center space-x-2 rtl:space-x-reverse">
-          <span className="text-sm font-semibold text-gray-900 dark:text-white">
+          <span className="text-sm font-semibold text-text">
             {name}
           </span>
           <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
@@ -39,7 +39,7 @@ function ChatBubble({
           } 
           dark:bg-gray-700`}
         >
-          <p className="text-sm font-normal text-gray-900 dark:text-white">
+          <p className="text-sm font-normal text-text">
             {text}
           </p>
           {imageSrc && (
