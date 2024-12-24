@@ -3,7 +3,7 @@ import Grid from "./ui/grid";
 
 function Bento() {
   return (
-    <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
+    <div className=" grid gap-4  lg:grid-cols-3 lg:grid-rows-2">
       <div className="relative lg:row-span-2">
         <div className="absolute inset-px rounded-lg bg-containerBackground lg:rounded-l-[2rem]"></div>
         <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
