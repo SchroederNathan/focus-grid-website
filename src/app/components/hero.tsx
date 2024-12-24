@@ -36,7 +36,7 @@ function Hero() {
                 />
               </a>
             </div>
-            <p className="text-gray-500 mt-6">Coming Soon</p>
+            <p className="text-gray-500 mt-6 font-semibold">Coming Soon</p>
           </div>
         </div>
 
@@ -48,7 +48,7 @@ function Hero() {
           <div className="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
             <img
               src="images/device-home.jpeg"
-              className="hidden dark:block w-[272px] h-[572px]"
+              className="block w-[272px] h-[572px]"
               alt="Device home - iOS"
             />
           </div>
