@@ -23,9 +23,7 @@ function ChatBubble({
         }`}
       >
         <div className="flex items-center space-x-2 rtl:space-x-reverse">
-          <span className="text-sm font-semibold text-text">
-            {name}
-          </span>
+          <span className="text-sm font-semibold text-text">{name}</span>
           <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
             {time}
           </span>
@@ -39,13 +37,23 @@ function ChatBubble({
           } 
           dark:bg-gray-700`}
         >
-          <p className="text-sm font-normal text-text">
-            {text}
-          </p>
+          <p className="text-sm font-normal text-text">{text}</p>
           {imageSrc && (
-            <div className="group relative my-2.5">
-              <img src={imageSrc} className="rounded-lg" />
-            </div>
+            // <div className="group relative my-2.5">
+            //   <img src={imageSrc} className="rounded-lg" />
+            // </div>
+            <a
+              href="#"
+              className="bg-gray-50 dark:bg-gray-600 rounded-xl p-4 mb-2 mt-2 hover:bg-gray-200 dark:hover:bg-gray-500"
+            >
+              <img
+                src={imageSrc}
+                className="rounded-lg mb-2"
+              />
+              <span className="text-sm font-medium text-gray-900 dark:text-white mb-2">
+                Focus Grid - Habit Tracker
+              </span>
+            </a>
           )}
         </div>
         {ltr === "sender" && (

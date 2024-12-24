@@ -54,19 +54,18 @@ function Bento() {
         <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
           <div className="px-8 pt-8 sm:px-10 sm:pt-10 text-center">
             <p className="mt-2 text-xl font-medium tracking-tight text-text">
-              Security
+              Share Your Success
             </p>
             <p className="mt-2 max-w-lg mx-auto text-md/6 text-gray-400">
-              Your habit data stays private on your device and restores
-              seamlessly from backups, ensuring secure and reliable tracking.
+              Build a supportive community by connecting with friends, sharing milestones. Stay motivated and accountable on your journey to better habits.
             </p>
           </div>
           <div className="flex items-center justify-center w-full h-full xl:mt-8 px-8 max-xl:pb-12 max-xl:pt-10 sm:px-10 pb-12">
             <div className="w-full  max-w-lg">
               <ChatBubble
                 name="Bonnie Green"
-                text="I'm working from home today! 😅"
-                imageSrc="images/"
+                text="Just hit a 7 day streak with my reading habit! 📚✨"
+                imageSrc="images/habit.png"
                 time="11:46"
                 ltr="sender"
               />
