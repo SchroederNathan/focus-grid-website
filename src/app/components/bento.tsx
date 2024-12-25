@@ -18,7 +18,7 @@ function Bento() {
             </p>
           </div>
           <div className="relative min-h-[30rem] w-full grow [container-type:inline-size] max-xl:mx-auto max-xl:max-w-sm">
-            <div className="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
+            <div className="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-800 bg-white shadow-2xl">
               <img
                 className="size-full object-cover object-top"
                 src="images/device-add.jpeg"
@@ -93,7 +93,7 @@ function Bento() {
             </p>
           </div>
           <div className="relative min-h-[20rem] w-full grow [container-type:inline-size] max-xl:mx-auto max-xl:max-w-sm">
-            <div className="absolute inset-x-12  bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
+            <div className="absolute inset-x-12  bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-800 bg-white shadow-2xl">
               <img
                 className="size-full object-cover object-top"
                 src="images/device-notification.jpg"

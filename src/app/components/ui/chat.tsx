@@ -37,7 +37,7 @@ function ChatBubble({
           } 
           dark:bg-gray-700`}
         >
-          <p className="text-sm font-normal text-text">{text}</p>
+          <p className="text-sm font-normal text-gray-900 dark:text-white">{text}</p>
           {imageSrc && (
             // <div className="group relative my-2.5">
             //   <img src={imageSrc} className="rounded-lg" />

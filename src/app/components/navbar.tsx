@@ -1,5 +1,7 @@
 "use client";
 
+import ThemeToggler from "./ui/theme";
+
 function NavBar() {
   // const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -40,6 +42,7 @@ function NavBar() {
               </a>
             ))}
           </div> */}
+          <ThemeToggler />
       </nav>
       {/* <Dialog
           open={mobileMenuOpen}

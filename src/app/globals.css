@@ -11,16 +11,15 @@
   --container-background: #ffffff;
   --secondary-container: #e8e7ef;
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #dddee4;
-    --background: #121318;
-    --primary: #8a9cd0;
-    --secondary: #a9aec1;
-    --accent: #0065bd;
-    --container-background: #1e1f25;
-    --secondary-container: #34343a;
-  }
+
+.dark {
+  --text: #dddee4;
+  --background: #121318;
+  --primary: #8a9cd0;
+  --secondary: #a9aec1;
+  --accent: #0065bd;
+  --container-background: #1e1f25;
+  --secondary-container: #34343a;
 }
 
 body {
