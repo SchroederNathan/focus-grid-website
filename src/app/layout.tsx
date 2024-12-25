@@ -13,7 +13,31 @@ export const metadata: Metadata = {
   description:
     "Focus Grid is a productivity tool that helps you focus on your tasks and get things done.",
   icons: {
-    icon: "/focusgridlogo.png",
+    icon: "/images/logo.svg",
+  },
+  openGraph: {
+    title: "Focus Grid",
+    description:
+      "Focus Grid is a productivity tool that helps you focus on your tasks and get things done.",
+    url: "https://focusgridapp.com", 
+    siteName: "Focus Grid",
+    images: [
+      {
+        url: "https://focusgridapp.com/images/focusgrid-preview.png", // Replace with your actual image URL
+        width: 1200,
+        height: 630,
+        alt: "Focus Grid Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Focus Grid",
+    description:
+      "Focus Grid is a productivity tool that helps you focus on your tasks and get things done.",
+    images: ["https://focusgridapp.com/images/focusgrid-preview.png"], // Replace with your actual image URL
   },
 };
 
