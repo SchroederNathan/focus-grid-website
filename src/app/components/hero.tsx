@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 function Hero() {
   return (
     <div className="max-lg:mx-auto max-w-5xl max-lg:py-24 py-32 mx-auto">
@@ -22,16 +24,20 @@ function Hero() {
             </p>
             <div className="mt-10 flex items-center max-lg:justify-center gap-x-6">
               <a href="#" className="opacity-20 cursor-not-allowed">
-                <img
+                <Image
                   src="/images/appstore.svg"
                   alt="App Store"
+                  width={120}
+                  height={40}
                   className="h-10"
                 />
               </a>
               <a href="#" className="opacity-20 cursor-not-allowed">
-                <img
+                <Image
                   src="/images/googleplay.png"
                   alt="Google Play"
+                  width={120}
+                  height={40}
                   className="h-10"
                 />
               </a>
@@ -46,10 +52,12 @@ function Hero() {
           <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
           <div className="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
           <div className="rounded-[2rem] overflow-hidden w-[272px] h-[572px] dark:bg-gray-800">
-            <img
-              src="images/device-home.jpeg"
-              className="block w-[272px] h-[572px]"
+            <Image
+              src="/images/device-home.jpeg"
+              className="block"
               alt="Device home - iOS"
+              width={272}
+              height={572}
             />
           </div>
         </div>

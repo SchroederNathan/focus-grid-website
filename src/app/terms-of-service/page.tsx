@@ -31,7 +31,7 @@ const TermsOfService = () => {
                 1. Acceptance of Terms
               </h2>
               <p className="text-text">
-                By accessing and using Focus Grid ("the App"), you agree to be
+                By accessing and using Focus Grid, you agree to be
                 bound by these Terms of Service. If you do not agree to these
                 terms, please do not use the App.
               </p>
