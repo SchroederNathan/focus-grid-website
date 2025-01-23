@@ -37,7 +37,9 @@ function ChatBubble({
           } 
           dark:bg-gray-700`}
         >
-          <p className="text-sm font-normal text-gray-900 dark:text-white">{text}</p>
+          <p className="text-sm font-normal text-gray-900 dark:text-white">
+            {text}
+          </p>
           {imageSrc && (
             // <div className="group relative my-2.5">
             //   <img src={imageSrc} className="rounded-lg" />
@@ -46,10 +48,7 @@ function ChatBubble({
               href="#"
               className="bg-gray-50 dark:bg-gray-600 rounded-xl p-4 mb-2 mt-2 hover:bg-gray-200 dark:hover:bg-gray-500"
             >
-              <img
-                src={imageSrc}
-                className="rounded-lg mb-2"
-              />
+              <img src={imageSrc} className="rounded-lg mb-2" />
               <span className="text-sm font-medium text-gray-900 dark:text-white mb-2">
                 Focus Grid - Habit Tracker
               </span>

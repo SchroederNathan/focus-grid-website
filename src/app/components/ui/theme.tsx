@@ -11,10 +11,12 @@ export default function ThemeToggler({ className }: { className?: string }) {
   useEffect(() => {
     // Check initial theme from localStorage or system preference
     setMounted(true);
-    const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
-    setIsDarkMode(savedTheme === 'dark' || (!savedTheme && prefersDark));
+    const savedTheme = localStorage.getItem("theme");
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+
+    setIsDarkMode(savedTheme === "dark" || (!savedTheme && prefersDark));
   }, []);
 
   useEffect(() => {
@@ -22,10 +24,10 @@ export default function ThemeToggler({ className }: { className?: string }) {
       // Update DOM and localStorage when theme changes
       if (isDarkMode) {
         document.documentElement.classList.add("dark");
-        localStorage.setItem('theme', 'dark');
+        localStorage.setItem("theme", "dark");
       } else {
         document.documentElement.classList.remove("dark");
-        localStorage.setItem('theme', 'light');
+        localStorage.setItem("theme", "light");
       }
     }
   }, [isDarkMode, mounted]);
@@ -43,8 +45,8 @@ export default function ThemeToggler({ className }: { className?: string }) {
         aria-hidden="true"
         className="pointer-events-none inline-block size-5 translate-x-0 rounded-full bg-background ring-0 shadow-lg transition duration-200 ease-in-out group-data-[checked]:translate-x-7"
       />
-      <MoonIcon className="text-background size-5 mx-auto -mr-[0.5px]"/>
-      <SunIcon className="text-background size-5 absolute"/>
+      <MoonIcon className="text-background size-5 mx-auto -mr-[0.5px]" />
+      <SunIcon className="text-background size-5 absolute" />
     </Switch>
   );
 }

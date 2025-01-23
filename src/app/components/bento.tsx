@@ -57,7 +57,9 @@ function Bento() {
               Share Your Success
             </p>
             <p className="mt-2 max-w-lg mx-auto text-md/6 text-gray-400">
-              Build a supportive community by connecting with friends, sharing milestones. Stay motivated and accountable on your journey to better habits.
+              Build a supportive community by connecting with friends, sharing
+              milestones. Stay motivated and accountable on your journey to
+              better habits.
             </p>
           </div>
           <div className="flex items-center justify-center w-full h-full xl:mt-8 px-8 max-xl:pb-12 max-xl:pt-10 sm:px-10 pb-12">
