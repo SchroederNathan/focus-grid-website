@@ -2,6 +2,7 @@ import Bento from "./components/bento";
 import Footer from "./components/footer";
 import Hero from "./components/hero";
 import NavBar from "./components/navbar";
+import Pricing from "./components/pricing";
 
 export default function Home() {
   return (
@@ -23,6 +24,8 @@ export default function Home() {
         <Hero />
 
         <Bento />
+
+        <Pricing />
 
         <div
           aria-hidden="true"
