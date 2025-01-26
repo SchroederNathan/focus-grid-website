@@ -22,8 +22,8 @@ function Hero() {
               Small steps lead to big changes. Track your habits daily, stay
               consistent, and watch your progress unfold over time.
             </p>
-            <div className="mt-10 flex items-center max-lg:justify-center gap-x-6">
-              <a href="#" className="opacity-20 cursor-not-allowed">
+            <div className="mt-10 flex max-lg:justify-center gap-x-6">
+              <a href="https://apps.apple.com/us/app/focus-grid-habit-tracker/id6741008684" className="">
                 <Image
                   src="/images/appstore.svg"
                   alt="App Store"
@@ -32,7 +32,7 @@ function Hero() {
                   className="h-10"
                 />
               </a>
-              <a href="#" className="opacity-20 cursor-not-allowed">
+              <a href="#" className="opacity-20 cursor-not-allowed  flex-col">
                 <Image
                   src="/images/googleplay.png"
                   alt="Google Play"
@@ -40,9 +40,9 @@ function Hero() {
                   height={40}
                   className="h-10"
                 />
+                <p className="text-text mt-2 font-semibold">Coming Soon</p>
               </a>
             </div>
-            <p className="text-gray-500 mt-6 font-semibold">Coming Soon</p>
           </div>
         </div>
 
